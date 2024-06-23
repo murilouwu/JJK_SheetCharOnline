@@ -1,0 +1,51 @@
+:root{
+    --corA: #ef3131;
+    --corB: #1ec957;
+    --corC: #020105;
+    --corD: #d8d8e7;
+    --corE: #590d2d;
+    --Invisible: rgba(0 0 0/ 0%);
+}
+@font-face {
+    font-family: 'FontJuju';
+    src: url('../fonts/JujutsuKaisen.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: 0.2s;
+}
+
+/*web-kit*/
+    input[type=file] {
+        display: none;
+    }
+
+    ::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(0 0 0 /50%);
+        display: none;
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    button:focus, button:focus-visible, input:focus-visible, input:focus, select:focus-visible, select:focus, textarea:focus-visible, textarea:focus {
+        outline: none;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: overlay;
+    }

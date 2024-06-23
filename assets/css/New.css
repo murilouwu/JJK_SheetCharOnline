@@ -1,0 +1,344 @@
+@import 'preset.css';
+
+body{
+    background-image: url(../imgs/BgNew.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+    .container{
+        background-color: rgba(0 0 0/ 0.2);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: brightness(95%) sepia(31%) hue-rotate(332deg) contrast(122%) saturate(90%);
+    }
+        .blockTrans{
+            width: 90vw;
+            height: 80vh;
+            border-radius: 0.01vw;
+            backdrop-filter: blur(2px) saturate(43%);
+            background-color: rgb(68 81 76 / 40%);
+            overflow: hidden;
+            display: grid;
+            flex-direction: column;
+        }
+            .TrapRose{
+                background-color: rgb(239 49 49 / 87%);
+                width: 55%;
+                justify-self: end;
+                rotate: 18deg;
+                height: 150%;
+                margin-top: -11vh;
+                margin-right: -5vw;
+                position: absolute;
+                box-shadow: 0px 0px 0px 25px rgb(200 2 54 / 88%);
+            }
+            .Back{
+                height: 1.5vw;
+                justify-self: flex-start;
+                margin-top: 2vh;
+                margin-left: 0.5vw;
+                background-color: var(--corA);
+                border: none;
+                padding: 0vw 0.8vw;
+                border-radius: 0.5vw;
+                color: var(--corC);
+                font-size: 1.5vh;
+                box-shadow: 8px 0px 0px -1px rgb(61 16 28 / 64%);
+            }
+                .Back:hover{
+                    cursor: pointer;
+                    box-shadow: 0px 0px 5px 3px rgb(133 38 52);
+                    background-color: var(--corD);
+                }
+                .Back2{
+                    background-color: var(--corE);
+                    color: var(--corA);
+                    box-shadow: none;
+                    margin-top: -3vh;
+                    height: 3vh;
+                    width: 5.5vw;
+                    margin-left: 83vw;
+                    z-index: 1;
+                    display: none;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                    .Back2:hover{
+                        box-shadow: none;
+                        background-color: var(--corC);
+                    }
+            .blockTrans h2{
+                font-family: "fontJuju";
+                text-align: center;
+                font-size: 8vh;
+                z-index: 1;
+                color: var(--corC);
+                text-shadow: 0px 0px 5px var(--corB);
+                letter-spacing: 0.3vw;
+            }
+            .Construct{
+                display: flex;
+                height: 65vh;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                z-index: 1;
+            }
+                .Img{
+                    display: flex;
+                    flex-direction: column;
+                    width: 29vw;
+                    margin-left: -5vw;
+                    height: 48vh;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                    .Preset{
+                        display: flex;
+                        height: 37vh;
+                        filter: drop-shadow(0px 0px 2px var(--corB));
+                        border-radius: 0.3vw;
+                    }
+                        .Preset:hover{
+                            cursor: pointer;
+                            filter: drop-shadow(0px 0px 9px var(--corB));
+                        }
+                    .Title{
+                        font-family: "fontJuju";
+                        background-color: var(--Invisible);
+                        color: var(--corC);
+                        border: none;
+                        text-align: center;
+                        font-size: 5vh;
+                        font-weight: bold;
+                        width: 90%;
+                        text-shadow: 0px 0px 3px var(--corB);
+                        padding: 0.5vw;
+                        letter-spacing: 0.2vw;
+                    }
+                        .Title:hover{
+                            cursor: pointer;
+                            border-bottom: 2px solid var(--corB);
+                        }
+                        .Title::-webkit-input-placeholder{
+                            text-shadow: 0px 0px 3px var(--corB);
+                            color: rgba(2, 1, 5, 0.651);
+                        }
+                .blockBasic{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 56vh;
+                    width: 28vw;
+                    margin-left: 4vw;
+                    justify-content: space-between;
+                }
+                    .inputs{
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        height: 28vh;
+                        justify-content: space-around;
+                    }
+                        .inputText{
+                            background-color: var(--Invisible);
+                            border: none;
+                            padding: 0.5vw 1vw;
+                            margin-bottom: 2vh;
+                            font-family: "fontJuju";
+                            letter-spacing: 0.2vw;
+                            font-size: 2vh;
+                            font-weight: bold;
+                            font-style: italic;
+                            color: var(--corC);
+                        }
+                            .inputText:hover{
+                                cursor: pointer;
+                                border-bottom: 2px solid var(--corB);
+                                color: var(--corB);
+                            }
+
+                            .inputText:focus{
+                                border-bottom: 2px solid var(--corC);
+                            }
+
+                            .inputText:hover::-webkit-input-placeholder{
+                                color: var(--corB);
+                            }
+
+                            .inputText::-webkit-input-placeholder{
+                                color: var(--corE);
+                            }
+                            
+                    .Submit{
+                        display: flex;
+                        width: 100%;
+                        align-items: end;
+                        justify-content: end;
+                        color: var(--corE);
+                        font-size: 3vh;
+                        font-weight: bold;
+                        font-family: 'FontJuju';
+                        letter-spacing: 0.2vw;
+                    }
+                        .blockBasic img{
+                            height: 32vh;
+                            margin-top: -10vh;
+                            margin-left: 20vw;
+                            filter: drop-shadow(-1vw -1vh 0px var(--corB));
+                        }
+                        .blockBasic .Balao{
+                            background-image: url(../imgs/Balan.png);
+                            background-position: center;
+                            background-size: cover;
+                            width: 8vw;
+                            height: 16vh;
+                            position: absolute;
+                            margin: 25vh 0vw 0vh 37vw;
+                            transform: scale(1, -1);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                            .Balao p{
+                                transform: scale(1, -1);
+                                color: var(--corC);
+                                font-family: cursive;
+                                font-size: 1.3vh;
+                                width: 3.5vw;
+                                height: 10vh;
+                                font-weight: bold;
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                            }
+                        .BtnEnv{
+                            color: var(--corA);
+                            background-color: var(--corE);
+                            border: none;
+                            border-radius: 0.5vw;
+                            padding: 0.5vw 1vw;
+                            font-size: 3vh;
+                        }
+                        .Submit.Abb{
+                            color: var(--corC);
+                        }
+                            .Submit.Abb label:hover{
+                                cursor: pointer;
+                                text-decoration: underline;
+                                color: var(--corD);
+                            }
+                            .Submit.Abb .BtnEnv{
+                                color: var(--corC);
+                                background-color: var(--corD);
+                            }
+        .YujiTranvEr{
+            height: 70vh;
+            position: absolute;
+            margin: 23vh 0vw 0vh 2vw;
+            filter: drop-shadow(-2vw -3vh 0px var(--corB));
+        }
+
+
+        .modal{
+            display: none;
+            background-color: var(--corD);
+            position: absolute;
+            z-index: 2;
+            height: 70vh;
+            width: 50vw;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 1vw;
+            animation:  0.7s modal linear;
+        }
+            .modal .exit{
+                color: var(--corC);
+                margin-top: -1vh;
+                margin-left: 49vw;
+                background-color: var(--corD);
+                padding: 6px 9px;
+                border-radius: 3vw;
+            }
+                .modal .exit:hover{
+                    background-color: var(--corE);
+                    cursor: pointer;
+                    color: var(--corD);
+                    padding: 12px 14px;
+                    margin-top: -2vh;
+                }
+            .modal h3{
+                color: var(--corC);
+                font-size: 4vh;
+                font-family: 'FontJuju';
+                letter-spacing: 0.4vw;
+                margin-top: 3vh;
+            }
+            .modal h5{
+                color: var(--corC);
+                font-size: 2vh;
+                font-family: monospace;
+                letter-spacing: 0.4vw;
+                margin-top: 2vh;
+                width: 28vw;
+                text-align: center;
+            }
+            .BlockCopy{
+                color: var(--corA);
+                background-color: var(--corE);
+                width: 40vw;
+                margin-top: 4vh;
+                padding: 1vw;
+                border-radius: 1.4vw;
+                font-size: 2vh;
+                font-style: italic;
+                text-align: center;
+                font-weight: bold;
+                letter-spacing: 0.2vw;
+                font-family: monospace;
+            }
+            .CopyUti{
+                margin-top: 2vh;
+                background-color: var(--corC);
+                border: none;
+                padding: 1vw 4vw;
+                border-radius: 0.5vw;
+                color: var(--corD);
+                font-size: 2vh;
+                box-shadow: 2px 2px 0px 2px var(--corB);
+                font-weight: bold;
+                font-family: 'FontJuju';
+                letter-spacing: 0.3vw;
+            }
+                .CopyUti:hover{
+                    cursor: pointer;
+                    background-color: var(--corE);
+                    box-shadow: none;
+                }
+                .CopyUti:disabled{
+                    background-color: rgba(99, 6, 34, 0.7);
+                    color: var(--corE);
+                    box-shadow: none;
+                }
+                    .CopyUti:disabled:hover{
+                        cursor: default;
+                        background-color: rgba(99, 6, 34, 0.7);
+                    }
+            .modal .Exp{
+                height: 29vh;
+                margin-top: 2vh;
+                border-radius: 0.6vw;
+            }
+
+@keyframes modal{
+    0%{
+        margin-top: -240vh;
+    }
+    100%{
+        margin-top: 0vh;
+    }
+}
